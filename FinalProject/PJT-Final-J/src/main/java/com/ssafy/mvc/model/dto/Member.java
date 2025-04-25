@@ -1,0 +1,47 @@
+package com.ssafy.mvc.model.dto;
+
+import java.time.LocalDate;
+
+public class Member {
+	private int meetingId;
+	private int uSeq;
+	private String status;
+	private LocalDate createdAt;
+	public Member() {
+	}
+	public Member(int meetingId, int uSeq, String status, LocalDate createdAt) {
+		this.meetingId = meetingId;
+		this.uSeq = uSeq;
+		this.status = status;
+		this.createdAt = createdAt;
+	}
+	public int getMeetingId() {
+		return meetingId;
+	}
+	public void setMeetingId(int meetingId) {
+		this.meetingId = meetingId;
+	}
+	public int getuSeq() {
+		return uSeq;
+	}
+	public void setuSeq(int uSeq) {
+		this.uSeq = uSeq;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public LocalDate getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(LocalDate createdAt) {
+		this.createdAt = createdAt;
+	}
+	@Override
+	public String toString() {
+		return "Member [meetingId=" + meetingId + ", uSeq=" + uSeq + ", status=" + status + ", createdAt=" + createdAt
+				+ "]";
+	}
+}

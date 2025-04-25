@@ -1,0 +1,60 @@
+user
+ uid ,pw, email ,name, nickname, gender, phonenumber
+
+
+
+board
+	bid
+	title
+ 	
+
+article
+	uid
+	aid
+	bid
+	title
+	content
+	created_at
+	modified_at
+	view_cnt
+	
+
+
+comment
+		aid
+		uid
+		cid
+		content
+		created_at
+		modifed_at
+		
+file
+	 aid 
+	img 
+	orgimg 
+	
+
+
+
+ like
+	 uid 
+ 	id type 
+
+
+follow
+ fromuid   touid          
+
+
+모임
+title
+content
+madeby(uid)
+num(제한인원)
+created_at
+
+
+group
+mid(모임)
+uid(신청자)
+state
+time(신청당시 시간)

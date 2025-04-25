@@ -1,0 +1,66 @@
+package com.ssafy.mvc.model.dto;
+
+import java.time.LocalDate;
+
+public class Comment {
+	private int commentId;
+	private int articleId;
+	private int uSeq;
+	private String content;
+	private LocalDate createdAt;
+	private LocalDate modifiedAt;
+	public Comment() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Comment(int commentId, int articleId, int uSeq, String content, LocalDate createdAt, LocalDate modifiedAt) {
+		super();
+		this.commentId = commentId;
+		this.articleId = articleId;
+		this.uSeq = uSeq;
+		this.content = content;
+		this.createdAt = createdAt;
+		this.modifiedAt = modifiedAt;
+	}
+	public int getCommentId() {
+		return commentId;
+	}
+	public void setCommentId(int commentId) {
+		this.commentId = commentId;
+	}
+	public int getArticleId() {
+		return articleId;
+	}
+	public void setArticleId(int articleId) {
+		this.articleId = articleId;
+	}
+	public int getuSeq() {
+		return uSeq;
+	}
+	public void setuSeq(int uSeq) {
+		this.uSeq = uSeq;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	public LocalDate getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(LocalDate createdAt) {
+		this.createdAt = createdAt;
+	}
+	public LocalDate getModifiedAt() {
+		return modifiedAt;
+	}
+	public void setModifiedAt(LocalDate modifiedAt) {
+		this.modifiedAt = modifiedAt;
+	}
+	@Override
+	public String toString() {
+		return "Comment [commentId=" + commentId + ", articleId=" + articleId + ", uSeq=" + uSeq + ", content="
+				+ content + ", createdAt=" + createdAt + ", modifiedAt=" + modifiedAt + "]";
+	}
+}
